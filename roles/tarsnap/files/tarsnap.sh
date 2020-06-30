@@ -22,7 +22,7 @@ MONTHLY=1
 MONTHLY_DAY=01
 
 # Path to tarsnap
-TARSNAP="/usr/local/bin/tarsnap"
+TARSNAP="/usr/bin/tarsnap"
 
 # Extra flags to pass to tarsnap
 EXTRA_FLAGS="-L -C /"
