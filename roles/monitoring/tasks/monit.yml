@@ -38,4 +38,3 @@
     - sshd
     - tomcat
   notify: restart monit
-

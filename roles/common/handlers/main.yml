@@ -12,3 +12,4 @@
 
 - name: restart ssh
   service: name=ssh state=restarted
+  when: ansible_ssh_user != "vagrant"
