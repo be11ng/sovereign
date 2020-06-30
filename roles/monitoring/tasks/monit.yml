@@ -5,6 +5,11 @@
   command: a2ensite 00-status.conf creates=/etc/apache2/sites-enabled/00-status.conf
   notify: restart apache
 
+- name: Add buster-backports for monit
+  apt_repository:
+    repo: deb http://ftp.de.debian.org/debian buster-backports main
+  when: ansible_distribution_release in ["buster"]
+
 - name: Install monit
   apt: pkg=monit state=present
   tags:
