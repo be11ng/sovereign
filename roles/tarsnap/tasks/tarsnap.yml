@@ -1,5 +1,5 @@
 - name: Check if Tarsnap is installed
-  shell: tarsnap --version
+  command: tarsnap --version
   register: tarsnap_installed
   changed_when: tarsnap_installed.rc != 0
   ignore_errors: yes
